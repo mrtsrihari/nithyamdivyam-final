@@ -46,7 +46,12 @@ if (process.env.NODE_ENV === 'production') {
 // Error handler (must be last)
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`🌿 Server running on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`🌿 Server running on port ${PORT}`);
+  });
+}
+
+// Export the Express app for Vercel Serverless Functions
+module.exports = app;
