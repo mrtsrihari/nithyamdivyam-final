@@ -8,21 +8,21 @@ const products = [
   {
     name: 'Premium Black Pepper',
     price: 299,
-    description:
-      'Our premium Black Pepper is sourced fresh from the lush, organic estates of Kajanaparai. Each peppercorn is hand-picked at peak maturity, sun-dried naturally, and carefully processed to preserve its bold aroma and intense flavor. Rich in antioxidants, it adds a sharp, earthy warmth to any dish — from curries to marinades. No additives. No preservatives. Pure nature in every grain.',
+    description: 'Fresh from organic estates of Kajanaparai. Rich in antioxidants.',
     image: 'https://images.unsplash.com/photo-1599909533731-b63e7f5d2b8b?w=600&auto=format',
     category: 'pepper',
     inStock: true,
+    stockQuantity: 100,
     unit: '100g',
   },
   {
     name: 'Organic Green Cardamom',
     price: 549,
-    description:
-      'Nithyam Divyam\'s Organic Green Cardamom brings the essence of Kerala\'s finest spice gardens to your kitchen. These plump, aromatic pods are grown without chemicals in fertile highlands, then carefully sorted and dried to lock in their sweet, floral fragrance. Perfect for biryanis, teas, desserts, and traditional sweets. A spice that transforms every recipe into something extraordinary.',
+    description: 'Plump, aromatic pods from Kerala\'s finest gardens. Perfect for biryanis and teas.',
     image: 'https://images.unsplash.com/photo-1615485500834-bc10199bc727?w=600&auto=format',
     category: 'cardamom',
     inStock: true,
+    stockQuantity: 50,
     unit: '50g',
   },
 ];

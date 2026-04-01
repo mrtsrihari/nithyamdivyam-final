@@ -29,6 +29,7 @@ const connectDB = async () => {
             image: 'https://images.unsplash.com/photo-1599909533731-b63e7f5d2b8b?w=600&auto=format',
             category: 'pepper',
             inStock: true,
+            stockQuantity: 100,
             unit: '100g',
           },
           {
@@ -38,6 +39,7 @@ const connectDB = async () => {
             image: 'https://images.unsplash.com/photo-1615485500834-bc10199bc727?w=600&auto=format',
             category: 'cardamom',
             inStock: true,
+            stockQuantity: 50,
             unit: '50g',
           }
         ]);

@@ -13,6 +13,7 @@ import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import OrderTrackingPage from './pages/OrderTrackingPage';
 
 // Admin pages
 import AdminLoginPage from './pages/admin/AdminLoginPage';
@@ -20,6 +21,7 @@ import AdminLayout from './pages/admin/AdminLayout';
 import AdminDashboardPage from './pages/admin/AdminDashboardPage';
 import AdminOrdersPage from './pages/admin/AdminOrdersPage';
 import AdminOrderDetailPage from './pages/admin/AdminOrderDetailPage';
+import AdminProductsPage from './pages/admin/AdminProductsPage';
 
 const PublicLayout = ({ children }) => (
   <>
@@ -59,6 +61,7 @@ function App() {
           <Route path="/products/:id" element={<PublicLayout><ProductDetailPage /></PublicLayout>} />
           <Route path="/cart" element={<PublicLayout><CartPage /></PublicLayout>} />
           <Route path="/checkout" element={<PublicLayout><CheckoutPage /></PublicLayout>} />
+          <Route path="/track-order" element={<PublicLayout><OrderTrackingPage /></PublicLayout>} />
           <Route path="/about" element={<PublicLayout><AboutPage /></PublicLayout>} />
           <Route path="/contact" element={<PublicLayout><ContactPage /></PublicLayout>} />
 
@@ -66,6 +69,7 @@ function App() {
           <Route path="/admin" element={<AdminLoginPage />} />
           <Route path="/admin" element={<AdminLayout />}>
             <Route path="dashboard" element={<AdminDashboardPage />} />
+            <Route path="products" element={<AdminProductsPage />} />
             <Route path="orders" element={<AdminOrdersPage />} />
             <Route path="orders/:id" element={<AdminOrderDetailPage />} />
           </Route>

@@ -29,8 +29,14 @@ const productSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
+    stockQuantity: {
+      type: Number,
+      required: true,
+      default: 100,
+    },
     unit: {
       type: String,
+      required: true,
       default: '100g',
     },
   },

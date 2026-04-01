@@ -9,7 +9,13 @@ const CheckoutPage = () => {
   const { items, totalPrice, clearCart } = useCartStore();
   const navigate = useNavigate();
   const total = totalPrice();
-  const [form, setForm] = useState({ customerName: '', phone: '', address: '', notes: '' });
+  const [form, setForm] = useState({
+    customerName: '',
+    phone: '',
+    email: '',
+    address: '',
+    notes: '',
+  });
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
@@ -104,6 +110,10 @@ const CheckoutPage = () => {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
                   <input name="phone" value={form.phone} onChange={handleChange} placeholder="+91 XXXXX XXXXX" className="input-field" required />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Email Address (Optional)</label>
+                  <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="john@example.com" className="input-field" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Delivery Address *</label>

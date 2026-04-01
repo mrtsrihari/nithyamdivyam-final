@@ -1,9 +1,10 @@
 import { Navigate, Outlet, Link, useLocation } from 'react-router-dom';
 import useAdminStore from '../../store/adminStore';
-import { HomeIcon, ClipboardDocumentListIcon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline';
+import { HomeIcon, ClipboardDocumentListIcon, ArrowRightOnRectangleIcon, ArchiveBoxIcon } from '@heroicons/react/24/outline';
 
 const navItems = [
   { to: '/admin/dashboard', icon: HomeIcon, label: 'Dashboard' },
+  { to: '/admin/products', icon: ArchiveBoxIcon, label: 'Products' },
   { to: '/admin/orders', icon: ClipboardDocumentListIcon, label: 'Orders' },
 ];
 

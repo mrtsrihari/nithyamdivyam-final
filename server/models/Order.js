@@ -22,6 +22,9 @@ const orderSchema = new mongoose.Schema(
       required: [true, 'Phone number is required'],
       trim: true,
     },
+    email: {
+      type: String,
+    },
     address: {
       type: String,
       required: [true, 'Delivery address is required'],
